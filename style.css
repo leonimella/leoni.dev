@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+body {
+  background-color: #0D0221;
+  color: #ff4365;
+}
+
+.content-wrapper {
+  display: block;
+  width: 90%;
+  max-width: 680px;
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.6;
+}
+
+.content-wrapper h1 {
+  margin: 0 0 15px;
+  font-size: 2.7rem;
+}
+
+.content-wrapper p {
+  margin: 0 0 70px;
+  font-weight: 200;
+}
+
+.content-wrapper a:link,
+.content-wrapper a:visited {
+  display: block;
+  color: #2DE2E6;
+  transition: 0.25s ease;
+}
+
+.content-wrapper a:focus,
+.content-wrapper a:hover,
+.content-wrapper a:active {
+  color: #f7d6cf;
+}
+
+.content-wrapper ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.content-wrapper ul a:link,
+.content-wrapper ul a:visited {
+  transition: 0.3s ease;
+  fill: #2DE2E6;
+}
+
+.content-wrapper ul a:focus,
+.content-wrapper ul a:hover,
+.content-wrapper ul a:active {
+  fill: #f7d6cf;
+}
+
+.content-wrapper ul svg {
+  display: block;
+  width: 45px;
+  height: auto;
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 18px;
+  }
+
+  .content-wrapper ul {
+    justify-content: space-around;
+  }
+}
